@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal
+}
+
+.header-container {
+    width: 1150px;
+    margin: auto;
+    padding: 20px;
+    /* background-color: aqua; */
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title > div {
+    display: flex;
+    gap: 20px;
+}
+
+.share, .favorite {
+    display: flex;
+    gap: 8px;
+}
+
+.share > a {
+    color: black;
+}
+.favorite > a {
+    color: black;
+}
+
+.image  {
+    /* background-color: blue; */
+    height: 320px;
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.image > img {
+    width: 50%;
+    height: 100%;
+}
+
+.layout{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.layout-1 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 10px;
+}
+
+.layout-2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 10px;
+}
+
+.layout-children {
+    /* background-color:brown; */
+    flex-direction: column;
+    width: 50%;
+}
+
+.layout-children > img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    /* background-color: burlywood; */
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+}
+
+.main-container {
+    width: 58%;
+    /* background-color: chartreuse; */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-section {
+    display: flex;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 35px;
+}
+
+.card1-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card1-section > i {
+    font-size: 30px;
+}
+
+#fav-left {
+  transform: scaleX(-1);
+}
+
+.card1-section > p {
+    font-weight: bold;
+}
+
+.card2-section > p {
+    font-weight: bold;
+}
+
+.card3-section > p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.star > i {
+    font-size: 8px;
+}
+
+.card4-section{
+    border-right: 1.5px solid #DDDDDD;
+}
+
+
+.card5-section > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card5-section > a {
+    color: black;
+    font-weight: bold;
+}
+
+.host {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1.5px solid #DDDDDD;
+    padding-bottom: 25px;
+}
+
+.host > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 48%;
+}
+
+.host-desc {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.host-desc > p {
+    font-size: 14px;
+    color: #a7a7a7;
+}
+
+.about-reserv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1.5px solid #DDDDDD;
+    padding-bottom: 25px;
+}
+
+.aserv1 {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.aserv1 > i {
+    font-size: 22px;
+}
+
+.aserv2 {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.aserv2 > i {
+    font-size: 22px;
+}
+
+.aserv2 > div > p {
+    font-size: 15px;
+    color: #a7a7a7;
+}
+
+.aserv3 {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.aserv3 > i {
+    font-size: 22px;
+}
+
+.aserv3 > div > p {
+    font-size: 15px;
+    color: #a7a7a7;
+}
+
+.about-village {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1.5px solid #DDDDDD;
+}
+
+.slider-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shead2 {
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.slider {
+    border-bottom: 1.5px solid #DDDDDD;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    position: relative; /* Mengatur posisi relatif untuk dapat menempatkan tombol */
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    display: flex;
+    gap: 26px;
+  }
+  
+  .slide > div > img {
+    width: 290px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .slide1, .slide2, .slide3 > h3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Penambahan gaya untuk tombol */
+  .prev,
+  .next {
+    background-color: white;
+    transform: scaleX(-1);
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+.service-room {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.servroom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.servroom1 {
+    display: flex;
+    gap: 150px;
+}
+
+.layserv1 > div {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.layserv2 > div {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.servroom2 > button {
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+aside {
+    width: 100%;
+    /* padding: 10px 20px; */
+
+}
+
+.card-reserv {
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    box-shadow: 2px 8px 8px 8px #F0F0F0;
+    padding: 23px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 20px;
+
+}
+
+.card-reserv1 {
+    gap: 5px;
+    align-items: center;
+}
+
+.card-reserv2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-reserv2 > .check{
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.caserv1 {
+    display: flex;
+    border-bottom: 1px solid #DDDDDD;
+    
+}
+
+.checkin {
+    width: 50%;
+    border-right: 1px solid #DDDDDD;
+    padding: 10px;
+
+}
+
+label, input  {
+    width: 100%;
+    display: block;
+}
+label {
+    font-weight: bold;
+}
+.checkout > label, input  {
+    width: 100%;
+    display: block;
+}
+
+input {
+    border: none;/
+}
+.checkout {
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+.caserv2 {
+    padding: 10px;
+}
+
+.reservasi > button {
+    width: 100%;
+    padding:  15px ;
+    background-color: #DD0F62;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.card-reserv3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-reserv3 > p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.desc-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+}
+
+.dprice1, .dprice2, .dprice3, .dprice4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+
+
+  
